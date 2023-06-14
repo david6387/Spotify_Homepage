@@ -1,0 +1,162 @@
+/* reset */
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: var(--grey);
+    font-weight: ;
+}
+
+/* global variables */
+:root {
+    /* color */
+    --black: black;
+    --black: #151515;
+    --black_light: #313131;
+    --grey: #bebebe;
+    --white: white;
+    --green: --green;
+
+    /* space control */
+    --gap-small: 5px;
+    --gap: 8px;
+    --gap-medium: 13px;
+    --gap-large: 20px;
+
+    --padding: 8px;
+    --padding-medium: 13px;
+    --padding-large: 23px;
+
+    /* border */
+
+    --border-small: ;
+    --border-large: ;
+    --border: ;
+    /* font */
+
+    --font-smallest: 11px;
+    --font-smallest: 11px;
+    --font-smallest: 11px;
+    --font-smallest: 11px;
+    --font-smallest: 11px;
+    --font-smallest: 11px;
+    --font-smallest: 11px;
+    --font-smallest: 11px;
+
+    /* weight */
+    --font-weight
+}
+
+body {
+    width: 100vh;
+    height: 100%;
+    background: var(--black);
+    display: grid;
+    grid-template-areas:
+        "sidebar dashboard"
+        "player player";
+    grid-template-columns: 27% auto;
+    grid-template-rows: 1fr 70px;
+    padding: var(--padding);
+}
+
+aside {
+    grid-area: sidebar;
+    display: flex;
+    flex-direction: column;
+    row-gap: var(--gap);
+}
+
+aside nav {
+    height: 110px;
+    width: 100%;
+    background: var(--black_light);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: var(--padding-large);
+    border-radius: var(--border);
+}
+
+aside nav img {
+    height: 23px;
+    margin-right: 20px;
+}
+
+aside nav label {
+    display: flex;
+    width: 100%;
+    font-size: var(--font-small)
+}
+
+aside nav label:hover {
+    color: var(--white);
+    cursor: pointer;
+}
+
+.librairy {
+    background: var(--black_light);
+    border-radius: ;
+    height: ;
+    width: ;
+    display: flex;
+    flex-direction: column;
+    padding: var(--padding-large);
+}
+
+.librairy-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.librairy-header h2 {}
+
+.librairy-type span {
+    background: ;
+    height: ;
+    width: ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: var(--border-rounded);
+    color: var(--white);
+}
+
+.librairy-search {
+    display: flex;
+    justify-content: space-between;
+}
+
+.librairy-search select {
+    background: none;
+    border: none;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+main {
+    grid-area: dashboard;
+}
+
+footer {
+    grid-area: player;
+}
